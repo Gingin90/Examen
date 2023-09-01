@@ -13,7 +13,7 @@ interface SuperHeroDao {
     suspend fun insertSuperHeroes(superHeroEntity: List<SuperHeroEntity>)
 
     @Query("Select * from super_hero_table order by id ASC")
-    fun getSuperHeroes(): LiveData<List<SuperHeroEntity>>
+    fun getSuperHeroes() :LiveData<List<SuperHeroEntity>>
 
     //Detalle
     @Insert(onConflict = OnConflictStrategy.REPLACE)

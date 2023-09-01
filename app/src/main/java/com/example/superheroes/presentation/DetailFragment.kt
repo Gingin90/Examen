@@ -74,7 +74,7 @@ class DetailFragment : Fragment() {
                         intentMail.putExtra(Intent.EXTRA_TEXT, message)
                         startActivity(Intent.createChooser(intentMail, "Send Mail"))
                     }
-                    findNavController().navigate(R.id.action_detailFragment_to_fragmentLista)
+                    findNavController().navigate(R.id.action_detailFragment_to_listFragment)
                 }
             }
     }}
