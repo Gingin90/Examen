@@ -1,7 +1,6 @@
-package com.example.superheroescomics.data.remote
+package com.example.superheroes.data.remote
 
-import com.example.superheroescomics.data.remote.detail.SuperHeroDetail
-import com.example.superheroescomics.data.remote.list.SuperHero
+
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Path

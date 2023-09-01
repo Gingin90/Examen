@@ -7,7 +7,7 @@ import androidx.room.OnConflictStrategy
 import androidx.room.Query
 
 @Dao
-interface SuperHeroDAO {
+interface SuperHeroDao {
     //Lista
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertSuperHeroes(superHeroEntity: List<SuperHeroEntity>)

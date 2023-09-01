@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Super Heroes</string>
+    <string name="enviar_correo" />
+    <string name="translate_true">Cuenta con traducción al español</string>
+    <string name="translate_false">Sin traducción</string>
+    <string name="body_msn">Hola, \n\nQuiero que el siguiente super heroe %1$s aparezca en la nueva edición de biografias animadas.
+        \n Numero contacto:____________\n\n Gracias.
+    </string>
+    <string name="addressee_msn">Comicconchile@hotmail.com</string>
+    <string name="subject_msn">Votación %1$s.</string>
 </resources>
