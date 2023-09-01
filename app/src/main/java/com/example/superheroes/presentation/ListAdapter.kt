@@ -6,9 +6,10 @@ import android.view.ViewGroup
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
+import com.example.superheroes.R
 import com.example.superheroes.data.local.SuperHeroEntity
-import com.example.superheroescomics.R
-import com.example.superheroescomics.databinding.ItemBinding
+import com.example.superheroes.databinding.ItemBinding
+
 
 
 class ListAdapter : RecyclerView.Adapter<ListAdapter.ListViewHolder>() {

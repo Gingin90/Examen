@@ -6,8 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
-
-import com.example.superheroescomics.databinding.FragmentListaBinding
+import com.example.superheroes.databinding.FragmentListaBinding
 
 
 class ListFragment : Fragment() {

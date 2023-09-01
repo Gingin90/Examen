@@ -5,12 +5,12 @@ plugins {
 }
 
 android {
-    namespace 'com.example.superheroescomics'
+    namespace 'com.example.superheroes'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.superheroescomics"
-        minSdk 27
+        applicationId "com.example.superheroes"
+        minSdk 26
         targetSdk 33
         versionCode 1
         versionName "1.0"

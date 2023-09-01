@@ -11,8 +11,9 @@ import androidx.fragment.app.activityViewModels
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
 import coil.load
-import com.example.superheroescomics.R
-import com.example.superheroescomics.databinding.FragmentDetailBinding
+import com.example.superheroes.R
+import com.example.superheroes.databinding.FragmentDetailBinding
+
 
 class DetailFragment : Fragment() {
     private var superHeroId: String? = null
