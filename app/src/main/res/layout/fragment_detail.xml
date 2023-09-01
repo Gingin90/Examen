@@ -5,6 +5,7 @@
     android:id="@+id/clItemDetail"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="@color/light_primary_color"
     tools:ignore="ExtraText">
     tools:context="com.example.superheroes.presentation.DetailFragment">
 
@@ -14,9 +15,11 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
+        android:backgroundtint="#FF5722"
         android:clickable="true"
         android:contentDescription='"Enviar Correo"'
         android:src="@drawable/baseline_email_24"
+        app:backgroundTint="@color/accent_color"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -49,7 +52,8 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/cl_translate_detail"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/secondary_text">
 
                     <TextView
                         android:id="@+id/tv_translate_detail"
@@ -132,13 +136,15 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/cl_super_power_detail"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/primary_color">
 
                     <TextView
                         android:id="@+id/tv_super_power_detail"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
 
+                        android:backgroundTint="@color/text_icons"
                         android:text="TextView"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -154,6 +160,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="16dp"
+                android:backgroundTint="@color/secondary_text"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/cv_name_detail">
@@ -182,6 +189,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="16dp"
+                android:backgroundTint="@color/dark_primary_color"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/cv_image_detail">
