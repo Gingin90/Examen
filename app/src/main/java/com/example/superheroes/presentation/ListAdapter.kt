@@ -3,6 +3,7 @@ package com.example.superheroes.presentation
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.core.os.bundleOf
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
@@ -45,8 +46,7 @@ class ListAdapter : RecyclerView.Adapter<ListAdapter.ListViewHolder>() {
             itemBinding.cvItemList.setOnClickListener {
                 val bundle = Bundle()
                 bundle.putString("id", superHero.id.toString())
-            }
-                Navigation.findNavController(itemBinding.root).navigate(R.id.action_fragmentLista_to_detailFragment)
+                Navigation.findNavController(itemBinding.root).navigate(R.id.action_fragmentLista_to_detailFragment, bundle)
             }
         }
-    }
+    }}
