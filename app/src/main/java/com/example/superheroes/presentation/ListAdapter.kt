@@ -45,7 +45,7 @@ class ListAdapter : RecyclerView.Adapter<ListAdapter.ListViewHolder>() {
             itemBinding.cvItemList.setOnClickListener {
                 val bundle = Bundle()
                 bundle.putString("id", superHero.id.toString())
-                Navigation.findNavController(itemBinding.root).navigate(R.id.action_fragmentLista_to_detailFragment, bundle)
+                Navigation.findNavController(itemBinding.root).navigate(R.id.action_listFragment_to_detailFragment, bundle)
             }
         }
     }}
