@@ -42,11 +42,11 @@ class ListAdapter : RecyclerView.Adapter<ListAdapter.ListViewHolder>() {
         fun bind(superHero: SuperHeroEntity) {
             itemBinding.imageViewItem.load(superHero.imageUrl)
             itemBinding.tvNameItem.text = superHero.name
-            itemBinding.cvItemList.setOnClickListener{
+            itemBinding.cvItemList.setOnClickListener {
                 val bundle = Bundle()
                 bundle.putString("id", superHero.id.toString())
+            }
                 Navigation.findNavController(itemBinding.root).navigate(R.id.action_fragmentLista_to_detailFragment)
             }
         }
     }
-}

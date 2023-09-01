@@ -15,9 +15,8 @@ class SuperHeroViewModel(application: Application) : AndroidViewModel(applicatio
 
     init {
         val api = SuperHeroRetrofit.getSuperHeroRetrofit()
-        val cellPhoneDataBase: SuperHeroDao =
-            SuperHeroDatabase.getDataBase(application).getSuperHeroesDAO()
-        repository = Repository(api, cellPhoneDataBase)
+        val superHeroDatabase: SuperHeroDao = SuperHeroDatabase.getDataBase(application).getSuperHeroesDAO()
+        repository = Repository(api, superHeroDatabase)
     }
 
     //Lista

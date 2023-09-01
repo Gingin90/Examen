@@ -7,16 +7,16 @@
 
 
     <androidx.recyclerview.widget.RecyclerView
-        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-        app:spanCount="2"
         android:id="@+id/recycler_view_list"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="#BBDEFB"
+        android:background="#7B1FA2"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar_title_list" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_title_list"
+        app:spanCount="2" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar_title_list"

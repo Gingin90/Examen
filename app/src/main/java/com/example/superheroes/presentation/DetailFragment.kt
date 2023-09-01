@@ -8,6 +8,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
+import androidx.navigation.Navigation
+import androidx.navigation.fragment.findNavController
 import coil.load
 import com.example.superheroescomics.R
 import com.example.superheroescomics.databinding.FragmentDetailBinding
@@ -72,7 +74,7 @@ class DetailFragment : Fragment() {
                         intentMail.putExtra(Intent.EXTRA_TEXT, message)
                         startActivity(Intent.createChooser(intentMail, "Send Mail"))
                     }
+                    findNavController().navigate(R.id.action_detailFragment_to_fragmentLista)
                 }
             }
-    }
-}
+    }}
